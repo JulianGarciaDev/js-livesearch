@@ -59,9 +59,9 @@ input:focus {
 }
 
 i {
-    vertical-align: middle;
-    position: relative;
-    left: -40px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -35px;
     color: #757575;
 }
 
