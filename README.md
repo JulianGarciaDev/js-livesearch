@@ -3,9 +3,9 @@ Livesearch UI Test in JavaScript
 
 ### Vulnerable API KEY
 
-Change `const API = 'PASTE HERE YOUR API KEY'` in js/functions.js file with your The MovieDB API KEY.
+Change `const API = 'PASTE HERE YOUR API KEY'` in js/functions.js file with your The MovieDB API key.
 
-### Protect API KEY
+### Protected API KEY
 ### - Install DOTENV
 
 ```
