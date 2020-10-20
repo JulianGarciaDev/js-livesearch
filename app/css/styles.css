@@ -1,3 +1,11 @@
+:root {
+    --border: #D2D2D2;
+    --focus: #FF7300;
+    --focus-shadow: rgba(255, 115, 0, 0.2);
+    --icon: #757575;
+    --placeholder: #9B9B9B;
+}
+
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Regular.ttf);
@@ -36,7 +44,7 @@ html, body {
     max-width: 460px;
 }
 input {
-    border: 1px solid #D2D2D2;
+    border: 1px solid var(--border);
     box-sizing: border-box;
     border-radius: 4px;
     line-height: 22px;
@@ -52,9 +60,9 @@ input:hover {
 }
 input:focus {
     outline: none;
-    border: 1px solid #FF7300;
+    border: 1px solid var(--focus);
     box-sizing: border-box;
-    box-shadow: 0px 0px 8px rgba(255, 115, 0, 0.2);
+    box-shadow: 0px 0px 8px var(--focus-shadow);
     background-color: white;
 }
 
@@ -62,12 +70,12 @@ i {
     position: absolute;
     margin-top: 15px;
     margin-left: -35px;
-    color: #757575;
+    color: var(--icon);
 }
 
 #result {
     display: none;
-    border: 1px solid #D2D2D2;
+    border: 1px solid var(--border);
     border-top: 0px;
     box-sizing: border-box;
     border-bottom-left-radius: 4px;
@@ -95,7 +103,7 @@ i {
 }
 
 ::-webkit-input-placeholder {
-    color: #9B9B9B;
+    color: var(--placeholder);
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -103,7 +111,7 @@ i {
     line-height: 22px;
 }
 ::-moz-placeholder {
-    color: #9B9B9B;
+    color: var(--placeholder);
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -111,7 +119,7 @@ i {
     line-height: 22px;
 }
 :-ms-input-placeholder {
-    color: #9B9B9B;
+    color: var(--placeholder);
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -119,7 +127,7 @@ i {
     line-height: 22px;
 }
 :-moz-placeholder {
-    color: #9B9B9B;
+    color: var(--placeholder);
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;

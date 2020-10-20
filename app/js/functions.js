@@ -1,5 +1,5 @@
-const colorOrange = () => document.querySelector('i').style.color = '#FF7300'
-const colorGrey = () => document.querySelector('i').style.color = '#757575'
+const focusIcon = () => document.querySelector('i').style.color = 'var(--focus)'
+const blurIcon = () => document.querySelector('i').style.color = 'var(--icon)'
 
 const search = () => {
     const term = document.getElementById('search').value
@@ -39,6 +39,6 @@ const filterResults = (results, term) => {
 }
 
 const input = document.querySelector('input')
-input.addEventListener('focus', colorOrange)
-input.addEventListener('blur', colorGrey)
+input.addEventListener('focus', focusIcon)
+input.addEventListener('blur', blurIcon)
 input.addEventListener('keydown', search)
