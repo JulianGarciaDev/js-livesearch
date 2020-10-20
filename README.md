@@ -1,6 +1,10 @@
 # js-livesearch
 Livesearch UI Test in JavaScript
 
+### Vulnerable API KEY
+
+Change `const API = 'PASTE HERE YOUR API KEY'` in js/functions.js file with your The MovieDB API KEY.
+
 ### Protect API KEY
 ### - Install DOTENV
 
@@ -9,11 +13,11 @@ npm install dotenv
 ```
 
 ### - Use DOTENV
-.env file:
+.env:
 ```
-API_KEY=a8a5d630f7a58f4e5f3ea962d1252dcf
+API_KEY=YOUR THE MOVIEDB API KEY
 ```
-JavaScript:
+js/functions.js:
 ```
 require('dotenv').config()
 const API = process.env.API_KEY
